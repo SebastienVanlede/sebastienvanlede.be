@@ -12,6 +12,7 @@ import {
     FaTwitter,
     FaLinkedin,
     FaGithub,
+    FaInstagram
 } from 'react-icons/fa';
 
 function Landing() {
@@ -96,6 +97,19 @@ function Landing() {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='GitHub'
+                                />
+                            </a>
+                        )}
+                        {socialsData.instagram && (
+                            <a
+                                href={socialsData.instagram}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaInstagram
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Instagram'
                                 />
                             </a>
                         )}
